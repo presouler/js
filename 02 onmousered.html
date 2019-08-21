@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>day1</title>
+</head>
+<style>
+#div1{width:200px; height:200px; background:#CCC; border:1px; solid:#999;}
+</style>
+<script>
+function toShow(){
+	document.getElementById('div1').style.height='300px';
+    document.getElementById('div1').style.width='300px';
+    document.getElementById('div1').style.background='red';
+}
+function toHide(){
+	document.getElementById('div1').style.height='200px';
+    document.getElementById('div1').style.width='200px';
+    document.getElementById('div1').style.background='#CCC';
+}
+</script>
+<body>
+
+
+<div id="div1" onmouseover="toShow()"
+		onmouseout="toHide()">
+      hello.
+</div>
+</body>
+</html>

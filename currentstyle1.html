@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>currentstyle</title>
+</head>
+<style>
+#div1{width:200px;height:200px;background:red;}
+</style>
+<script>
+window.onload=function(){
+	
+	var oDiv=document.getElementById("div1");
+	
+	//alert(oDiv.currentStyle.width);// only for IE and high standard chrome
+	//alert(getComputedStyle(oDiv,null).width);not for IE 8 
+	//best way
+	if(oDiv.currrentStyle)
+	{
+		alert(oDiv.currentStyle.width);
+	}
+	else
+	{
+		alert(getComputedStyle(oDiv,false).width);
+	}
+
+};
+</script>
+<body>
+
+
+<div id="div1">
+
+</body>
+</html>

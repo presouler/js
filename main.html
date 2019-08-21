@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<link id="L1" rel="stylesheet" type="text/css" href="blue.css">
+</head>
+<script>
+function toBlue()
+{
+     var oL=document.getElementById('L1');
+	 oL.href='blue.css';
+}
+function toRed()
+{
+     var oL=document.getElementById('L1');
+	 oL.href='red.css';
+}
+</script>
+<body>
+<input type="button" onclick='toBlue()'/>
+<input type="button" onclick='toRed()'/>
+</body>
+</html>

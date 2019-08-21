@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>sum up</title>
+</head>
+<style>
+</style>
+<script>
+window.onload=function(){
+	var oTxt1=document.getElementById("txt1");
+	var oTxt2=document.getElementById("txt2");
+	var oBtn=document.getElementById("btn1");
+	
+	oBtn.onclick=function(){
+		
+		var a=parseInt(oTxt1.value);
+		var b=parseInt(oTxt2.value);
+		
+		if (isNaN(a)){
+			alert("the first number is wrong!");
+		}
+		else if (isNaN(b)){
+			alert("the second number is wrong!");
+		}
+		else 
+		{
+			alert(a+b);
+		}
+		};
+};
+</script>
+<body>
+<input id="txt1" type="text"/>
+<input id="txt2" type="text"/>
+<input id="btn1" type="button" value="sum_up"/>
+</body>
+</html>

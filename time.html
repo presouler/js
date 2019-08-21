@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>day1</title>
+</head>
+<style>
+</style>
+<script>
+function toDuo(n){
+	if(n<10)
+	{
+		return "0"+n;
+	}
+	else{
+		return ""+n;
+		}
+
+}
+window.onload=function(){
+	var aImg=document.getElementsByTagName("img");
+	
+	function tick(){
+	var oDate=new Date();
+	var str=toDuo(oDate.getHours())+toDuo(oDate.getMinutes())+toDuo(oDate.getSeconds());
+	for (var i=0;i<aImg.length;i++){
+		aImg[i].src=str.charAt(i)+".png";
+	}}
+	setInterval(tick,1000);
+	tick();
+	
+
+};
+
+</script>
+<body style="background-color:black;color:white;font-size:60px;">
+<img src="0.png">
+<img src="0.png">
+:
+<img src="0.png">
+<img src="0.png">
+:
+<img src="0.png">
+<img src="0.png">
+
+</body>
+</html>
